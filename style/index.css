@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  width: 100%;
+  height: 105px;
+  /* border: 1px solid red; */
+  background-image: linear-gradient(
+    to top left,
+    rgb(0, 128, 0),
+    rgb(255, 0, 0)
+  );
+  position: relative;
+}
+.nav > h1 {
+  text-align: center;
+  color: yellow;
+  position: relative;
+  top: 30px;
+  font-size: 50px;
+  transition-duration: 3s;
+  text-shadow: 5px 5px 5px white;
+}
+h1:hover {
+  color: white;
+  /* transition-duration: 1s; */
+  text-shadow: 5px 5px 5px yellow;
+  transform: skew(30deg);
+}
+.card {
+  position: relative;
+  height: 340px;
+  border: 1px solid green;
+  width: 11%;
+  top: 30px;
+  left: 80px;
+  border-radius: 20px;
+  background-image: linear-gradient(to top right, green, cyan);
+}
+.crl {
+  border: 1px solid #000;
+  padding-top: 10px;
+  border-radius: 50px;
+  width: 50%;
+  height: 65px;
+  position: absolute;
+  left: 35px;
+  animation: crl 2s infinite;
+  animation-timing-function: linear;
+  transition-duration: 5s;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  top: 10%;
+}
+@keyframes crl {
+  0% {
+    top: 0px;
+    background-color: red;
+    color: white;
+  }
+  50% {
+    
+    top: 76%;
+    background-color: green;
+  }
+  100% {
+ 
+    top: 0%;
+    background-color: blue;
+    transition-duration: 10s;
+  }
+}
+.line{
+  position: relative;
+  border: 1px solid black;
+  height: 53px;
+  width: 33%;
+  left: 350px;
+  top: -300px;
+  border-radius: 20px;
+}
+.line1{
+  position: absolute;
+  /* border: 1px solid purple;   */
+  height: 53px;
+  width: 100%;
+  border-radius: 20px;
+  animation: line 4s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes line{
+  0%{
+    width: 0%;
+    background-color: red;
+  }
+  50%{
+    width: 90%;
+
+    background-color: blue;
+    
+  }
+  100%{
+    width: 90%; 
+    background-color: black;
+
+    
+  }
+ }
+ .block{
+   position: relative;
+   width: 33%;
+   height: 248px;
+   border: 1px solid black;
+   left: 350px;
+   top: -282px;
+   border-radius: 20px;
+   background-color: rgba(240, 224, 203, 0.396);
+ }
+.block>.one{
+  position: absolute;
+  height: 130px;
+  width: 10%;
+  /* border: 1px solid red; */
+  left: 20px;
+  top: 118px;
+ background-color: blueviolet;
+  animation: one 4s linear;
+  transition-duration: 5s;
+  /* animation-iteration-count: infinite; */
+}
+@keyframes one{
+  0%{
+    background-color: yellow;
+  }
+  50%{
+    background-color: red;
+  }
+  100%{
+    
+    height: 10%;
+    background-color: blueviolet;
+  }
+}
+.block>.one1{
+  left: 90px;
+  height: 90px;
+  top: 158px;
+}
+.block>.one2{
+  left: 160px;
+  height: 129px;
+  top: 119px;
+}
+.block>.one3{
+  left: 235px;
+  height: 90px;
+  top: 158px;
+}
+.block>.one4{
+  left: 310px;
+  height: 129px;
+  top: 119px;
+}
+.block>.one5{
+  left: 383px;
+  height: 90px;
+  top: 158px;
+}
+
+
